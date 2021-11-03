@@ -5,7 +5,12 @@
   "bool": false,
 //^^^^^^ meta.mapping.key.json
 //^^^^^^^^^^^^^^ - meta.mapping meta.mapping
-//        ^^^^^ constant.language.json
+//        ^^^^^ constant.language.boolean.json
+
+  "null": null,
+//^^^^^^ meta.mapping.key.json
+//^^^^^^^^^^^^^ - meta.mapping meta.mapping
+//        ^^^^ constant.language.null.json
 
   "dict": { "key": "value" }
 //        ^^^^^^^^^^^^^^^^^^ meta.mapping.value.json meta.mapping - meta.mapping meta.mapping meta.mapping
@@ -64,13 +69,16 @@
 //                 ^ punctuation.definition.string.end.json
 
   "num": 20.09,
-//       ^^^^^ constant.numeric.float.decimal.json
+//       ^^^^^ meta.number.float.decimal.json constant.numeric.value.json
+//         ^ punctuation.separator.decimal.json
 
   "neg": -9,
-//       ^^ constant.numeric.integer.decimal.json
+//       ^^ meta.number.integer.decimal.json
+//       ^ keyword.operator.arithmetic.json
+//        ^ constant.numeric.value.json
 
   "E": 20e10,
-//     ^^^^^ constant.numeric.float.decimal.json
+//     ^^^^^ meta.number.float.decimal.json constant.numeric.value.json
 //^^^ meta.mapping.key.json string.quoted.double.json
 //   ^ punctuation.separator.mapping.key-value.json - meta.mapping.key
 
